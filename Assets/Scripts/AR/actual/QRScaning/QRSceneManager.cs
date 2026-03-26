@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TBEasyWebCam;
 
 public class QRSceneManager : MonoBehaviour
 {
     [Header("Plugin setup")]
     public QRCodeDecodeController qrController;
+
+    [Header("Alarm Window")]
+    public GameObject alarmWindow;
 
     [Serializable]
     public class SceneMapping
@@ -28,6 +30,20 @@ public class QRSceneManager : MonoBehaviour
 
         if (match != null)
         {
+            // Does the SceneName exist in Inspector
+            if (string.IsNullOrEmpty(match.sceneName))
+            {
+                OpenAlarm();
+                return;
+            }
+
+            // Does the Scene exist in Build Settings
+            if (SceneUtility.GetBuildIndexByScenePath(match.sceneName) == -1)
+            {
+                OpenAlarm();
+                return;
+            }
+
             // Stop camera and then go to the new scene
             if (qrController != null)
             {
@@ -37,5 +53,41 @@ public class QRSceneManager : MonoBehaviour
             // Go to the detected scene by ID
             SceneManager.LoadScene(match.sceneName);
         }
+        else
+        {
+            OpenAlarm();
+            return;
+            
+        }
+    }
+
+    // Does exist something better? To think about it
+    private void ResetScanner()
+    {
+        if (qrController != null)
+        {
+            qrController.StopWork();
+            qrController.StartWork();
+        }
+    }
+
+    // Open alarm window
+    private void OpenAlarm()
+    {
+        if (alarmWindow != null)
+        {
+            alarmWindow.SetActive(true);
+        }
+    }
+
+    // Action for button in Alarm window - close window and reset QRScanner
+    public void CloseAlarmAndReset()
+    {
+        if (alarmWindow != null)
+        {
+            alarmWindow.SetActive(false);
+        }
+
+        ResetScanner();
     }
 }

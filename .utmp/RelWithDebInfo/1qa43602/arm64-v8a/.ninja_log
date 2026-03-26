@@ -1,10 +1,19 @@
 # ninja log v5
 44	2479	7961342048925896	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d8dfa8858b9b5679
 26	2495	7961342049095664	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c0b437d09dd3b22d
-55	2563	7961342049699735	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	67905cf69ade161e
-9	2567	7961342049739825	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	bb8ec0d6192b3df2
 0	2724	7961342051398987	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	cfa869e9e820411c
+55	2563	7961342049699735	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	67905cf69ade161e
 67	3057	7961342054778595	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f7e9166e1388284d
+9	2567	7961342049739825	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	bb8ec0d6192b3df2
+3253	3460	7961342058840327	E:/Unity_projects/Projects/AR_planetarium/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1qa43602/obj/arm64-v8a/libgame.so	7e6f33f29ad3fbfa
 35	3080	7961342054981340	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	e4cdd9890dbe3112
 16	3252	7961342056662068	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	11b7d8306ac6fdc3
-3253	3460	7961342058840327	E:/Unity_projects/Projects/AR_planetarium/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1qa43602/obj/arm64-v8a/libgame.so	7e6f33f29ad3fbfa
+39	1933	7962119943054188	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c0b437d09dd3b22d
+46	1935	7962119943059266	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d8dfa8858b9b5679
+23	1975	7962119943502243	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	bb8ec0d6192b3df2
+68	1991	7962119943663454	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	67905cf69ade161e
+32	2052	7962119944338373	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	cfa869e9e820411c
+53	2259	7962119946390416	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	e4cdd9890dbe3112
+15	2355	7962119947345043	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	11b7d8306ac6fdc3
+76	2405	7962119947836383	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f7e9166e1388284d
+2405	2563	7962119949454063	E:/Unity_projects/Projects/AR_planetarium/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1qa43602/obj/arm64-v8a/libgame.so	7e6f33f29ad3fbfa
