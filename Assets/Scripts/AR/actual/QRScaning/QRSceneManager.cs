@@ -33,6 +33,7 @@ public class QRSceneManager : MonoBehaviour
             // Does the SceneName exist in Inspector
             if (string.IsNullOrEmpty(match.sceneName))
             {
+                Debug.LogWarning($"ID {scannedData} doesn't have value SceneName in Dictionary. Check SceneManager!");
                 OpenAlarm();
                 return;
             }
@@ -40,6 +41,7 @@ public class QRSceneManager : MonoBehaviour
             // Does the Scene exist in Build Settings
             if (SceneUtility.GetBuildIndexByScenePath(match.sceneName) == -1)
             {
+                Debug.LogWarning($"Scene with ID {scannedData} doesn't exist in Build Settings!");
                 OpenAlarm();
                 return;
             }
@@ -55,6 +57,7 @@ public class QRSceneManager : MonoBehaviour
         }
         else
         {
+            Debug.LogWarning("Unknown ID. Check SceneManager!");
             OpenAlarm();
             return;
             
