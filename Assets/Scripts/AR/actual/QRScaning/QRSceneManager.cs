@@ -60,7 +60,6 @@ public class QRSceneManager : MonoBehaviour
             Debug.LogWarning("Unknown ID. Check SceneManager!");
             OpenAlarm();
             return;
-            
         }
     }
 

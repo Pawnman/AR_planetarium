@@ -89,7 +89,10 @@ unity-cloud-build.cfg
 
 ## Rider ##
 .idea/
+.vs/
 *.sln.iml
+*.csproj
+*.sln
 
 ## VS Code ##
 .vscode/
@@ -102,3 +105,4 @@ unity-cloud-build.cfg
 
 ## Benchmarking ##
 /BenchmarkDotNet.Artifacts/
+
