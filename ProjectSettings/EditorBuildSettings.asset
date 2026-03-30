@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/StartScene.unity
+    guid: 97a5672bd2badd844a3b34bc4477f269
+  - enabled: 1
+    path: Assets/Scenes/ScannerScene.unity
     guid: 06704ddc492773541b53757e7701ea58
   - enabled: 1
     path: Assets/Scenes/TestARScene_1.unity
