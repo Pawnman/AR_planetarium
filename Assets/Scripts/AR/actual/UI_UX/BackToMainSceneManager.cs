@@ -5,11 +5,11 @@ public class BackToMainSceneManager : MonoBehaviour
 {
    public void LoadMainScene()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("StartScene");
     }
    
     public void LoadScannerScene()
     {
-        SceneManager.LoadScene("ScannerScene");
+        SceneManager.LoadScene("ScannerSceneTest");
     }
 }

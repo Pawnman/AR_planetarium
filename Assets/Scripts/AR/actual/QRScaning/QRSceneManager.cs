@@ -63,13 +63,12 @@ public class QRSceneManager : MonoBehaviour
         }
     }
 
-    // Does exist something better? To think about it
+    
     private void ResetScanner()
     {
         if (qrController != null)
         {
-            qrController.StopWork();
-            qrController.StartWork();
+            qrController.Reset();
         }
     }
 
